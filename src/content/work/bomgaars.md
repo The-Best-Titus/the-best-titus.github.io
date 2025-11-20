@@ -1,7 +1,7 @@
 ---
 title: "Bomgaars"
 subtitle: "Stocker & Checker"
-logo: "/images/bomgaars.png"
+logo: "/portfolio/images/bomgaars.png"
 startDate: "2021-06-01"
 endDate: "2025-08-01"
 link: "https://bomgaars.com"
