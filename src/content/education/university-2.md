@@ -1,7 +1,7 @@
 ---
 title: "Valentine High School"
 subtitle: "High school education"
-logo: "/images/Vlogo.png"
+logo: "/portfolio/images/Vlogo.png"
 startDate: "2021-09-01"
 endDate: "2025-05-30"
 link: "https://www.valentinecommunityschools.org/"
