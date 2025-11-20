@@ -90,6 +90,8 @@ export interface SiteConfig {
   sections: SectionsConfig;
 }
 
+const base = import.meta.env.BASE_URL || '/';
+
 /**
  * Site configuration object
  * Update these values to customize your portfolio
@@ -113,17 +115,17 @@ export const siteConfig: SiteConfig = {
     enable: true,
     links: [
       {
-        link: "/blog/",
+        link: `${base}/blog/`,
         icon: Notebook,
         label: "Blog",
       },
       {
-        link: "/projects/",
+        link: `${base}/projects/`,
         icon: Rocket,
         label: "Project",
       },
       {
-        link: "/",
+        link: `${base}/`,
         icon: House,
         label: "Home",
       },
