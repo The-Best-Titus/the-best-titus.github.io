@@ -1,7 +1,7 @@
 ---
 title: "Intro to My Blog"
 description: "Hello and welcome to my blog!"
-image: "./images/intro-blog.jpg"
+image: "./images/Intro-blog.jpg"
 publishDate: "2025.11.15"
 tags: ["Introduction", "blog"]
 ---
