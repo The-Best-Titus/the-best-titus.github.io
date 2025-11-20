@@ -38,6 +38,7 @@ const pageTransition = {
 };
 
 const origin = Astro.url.origin;
+const base = import.meta.env.BASE_URL;
 ---
 
 <!doctype html>
@@ -46,46 +47,39 @@ const origin = Astro.url.origin;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content={description} />
-    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+    <link rel="icon" type="image/svg+xml" href={`${base}favicon.png`} />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
-
     <!-- View Transitions -->
     <ClientRouter />
-
     <!-- Open Graph / Social Media -->
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={origin} />
-    <meta property="og:image" content={`${origin}/images/og_home.png`} />
-
+    <meta property="og:image" content={`${origin}${base}images/og_home.png`} />
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content={`${origin}/images/og_home.png`} />
+    <meta name="twitter:image" content={`${origin}${base}images/og_home.png`} />
   </head>
   <body class="min-h-screen">
     <!-- Theme Controls - Fixed Position -->
     <div class="fixed top-4 right-4 z-50">
       {siteConfig.enableThemeSelector ? <ThemeSelector /> : <ThemeToggle />}
     </div>
-
     <slot />
-
     {
       siteConfig.extraLinks.enable && (
         <FabFlower extraLinks={siteConfig.extraLinks} />
       )
     }
-
     <!-- Smooth Scroll -->
     <style is:global>
       html {
         scroll-behavior: smooth;
       }
-
       /* Initial Page Load Blur-Fade Animation */
       @keyframes pageLoadBlurFade {
         0% {
@@ -97,12 +91,10 @@ const origin = Astro.url.origin;
           filter: blur(0px);
         }
       }
-
       html {
         animation: pageLoadBlurFade 0.3s ease-in-out;
         animation-fill-mode: both;
       }
-
       /* Blur Fade View Transitions (for page-to-page navigation) */
       @keyframes blurFadeIn {
         0% {
@@ -114,7 +106,6 @@ const origin = Astro.url.origin;
           filter: blur(0px);
         }
       }
-
       @keyframes blurFadeOut {
         0% {
           opacity: 1;
