@@ -1,9 +1,9 @@
 ---
 title: "KVSH Heart City Radio"
-subtitle: "Intern"
+subtitle: "DJ"
 logo: "/portfolio/images/KVSH_bg.png"
-startDate: "2024-08-15"
-endDate: "2025-05-30"
+startDate: "2025-12-18"
+endDate: "2026-01-6"
 link: "https://KVSH.com"
 ---
 
