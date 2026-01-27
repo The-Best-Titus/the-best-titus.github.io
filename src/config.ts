@@ -115,17 +115,17 @@ export const siteConfig: SiteConfig = {
     enable: true,
     links: [
       {
-        link: `${base}/blog/`,
+        link: `/blog/`,
         icon: Notebook,
         label: "Blog",
       },
       {
-        link: `${base}/projects/`,
+        link: `/projects/`,
         icon: Rocket,
         label: "Project",
       },
       {
-        link: `${base}/`,
+        link: `/`,
         icon: House,
         label: "Home",
       },
