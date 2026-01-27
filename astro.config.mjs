@@ -8,7 +8,6 @@ import mdx from '@astrojs/mdx';
 
 export default defineConfig({
   site: 'https://maunu.dev',
-  base: '/',
   trailingSlash: 'ignore',
   integrations: [mdx()],
   vite: {
