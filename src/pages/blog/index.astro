@@ -35,7 +35,7 @@ function formatDate(date: Date) {
     </div>
     <!-- Back to Home -->
     <div class="mb-8">
-      <a href={base} class="btn btn-ghost btn-sm">
+      <a href="/" class="btn btn-ghost btn-sm">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="20"
@@ -78,7 +78,7 @@ function formatDate(date: Date) {
                   {formatDate(post.data.publishDate)}
                 </time>
                 <h2 class="card-title hover:text-primary transition-colors">
-                  <a href={`${base}/blog/${post.id}`}>{post.data.title}</a>
+                  <a href={`/blog/${post.id}`}>{post.data.title}</a>
                 </h2>
                 <p class="text-base-content/80">{post.data.description}</p>
                 {post.data.tags && post.data.tags.length > 0 && (
@@ -89,7 +89,7 @@ function formatDate(date: Date) {
                   </div>
                 )}
                 <div class="card-actions justify-end mt-4">
-                  <a href={`${base}/blog/${post.id}`} class="btn btn-primary btn-sm">
+                  <a href={`/blog/${post.id}`} class="btn btn-primary btn-sm">
                     Read More
                   </a>
                 </div>
