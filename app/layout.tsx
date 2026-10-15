@@ -15,6 +15,15 @@ export const metadata: Metadata = {
     "internship",
   ],
   authors: [{ name: "Titus Maunu" }],
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico", sizes: "any" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+  },
   openGraph: {
     title: "Titus Maunu — Hardware & Embedded Systems Engineer",
     description:

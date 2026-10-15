@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <!-- Outer metallic bezel -->
+    <linearGradient id="bezelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#bae6fd"/>
+      <stop offset="35%" stop-color="#38bdf8"/>
+      <stop offset="70%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#075985"/>
+    </linearGradient>
+
+    <!-- Glass orb radial body -->
+    <radialGradient id="orbBody" cx="42%" cy="36%" r="62%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="35%" stop-color="#0284c7"/>
+      <stop offset="75%" stop-color="#0369a1"/>
+      <stop offset="100%" stop-color="#082f49"/>
+    </radialGradient>
+
+    <!-- Vista Aurora wave effect inside the glass -->
+    <linearGradient id="auroraGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.75"/>
+      <stop offset="45%" stop-color="#06b6d4" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0.8"/>
+    </linearGradient>
+
+    <!-- Signature Vista glassy top gloss -->
+    <linearGradient id="glossHighlight" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Drop Shadow -->
+  <circle cx="32" cy="33" r="28" fill="rgba(0,0,0,0.3)"/>
+
+  <!-- Outer Chrome / Bezel Ring -->
+  <circle cx="32" cy="32" r="28" fill="url(#bezelGrad)"/>
+  <circle cx="32" cy="32" r="26" fill="#0369a1"/>
+
+  <!-- Inner Deep Aero Glass Orb -->
+  <circle cx="32" cy="32" r="25" fill="url(#orbBody)"/>
+
+  <!-- Windows Vista Aurora Arc across the glass interior -->
+  <path d="M 9 35 Q 22 46 36 33 T 55 28 L 55 45 Q 40 54 26 49 T 9 44 Z" fill="url(#auroraGrad)" opacity="0.45"/>
+
+  <!-- Circuit traces & Titus 'T' Core -->
+  <g>
+    <!-- Traces branching horizontally from top bar -->
+    <path d="M 12 36 L 19 36 L 24 30 L 24 24" stroke="#7dd3fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.85"/>
+    <path d="M 52 36 L 45 36 L 40 30 L 40 24" stroke="#7dd3fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.85"/>
+
+    <!-- Bottom circuit branch -->
+    <path d="M 32 46 L 24 50 L 16 50" stroke="#7dd3fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.85"/>
+    <path d="M 32 46 L 40 50 L 48 50" stroke="#7dd3fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.85"/>
+
+    <!-- Small circuit pads on branches -->
+    <circle cx="12" cy="36" r="2" fill="#38bdf8"/>
+    <circle cx="52" cy="36" r="2" fill="#38bdf8"/>
+    <circle cx="16" cy="50" r="2" fill="#38bdf8"/>
+    <circle cx="48" cy="50" r="2" fill="#38bdf8"/>
+
+    <!-- Bold Main 'T' Emblem -->
+    <!-- Top Bar -->
+    <rect x="18" y="20" width="28" height="6.5" rx="3.25" fill="#ffffff" filter="drop-shadow(0 0 4px rgba(56,189,248,0.8))"/>
+    <!-- Vertical Stem -->
+    <rect x="28.75" y="23" width="6.5" height="23" rx="3.25" fill="#ffffff" filter="drop-shadow(0 0 4px rgba(56,189,248,0.8))"/>
+
+    <!-- Golden/Amber IC Circuit Node Core Pins -->
+    <circle cx="21" cy="23.25" r="2" fill="#f59e0b" stroke="#ffffff" stroke-width="0.8"/>
+    <circle cx="43" cy="23.25" r="2" fill="#f59e0b" stroke="#ffffff" stroke-width="0.8"/>
+    <circle cx="32" cy="43.5" r="2" fill="#f59e0b" stroke="#ffffff" stroke-width="0.8"/>
+  </g>
+
+  <!-- Vista Aero Gloss Reflection (Top Crescent) -->
+  <path d="M 11 27 C 11 16 20 9 32 9 C 44 9 53 16 53 27 C 43 19 21 19 11 27 Z" fill="url(#glossHighlight)"/>
+
+  <!-- Subtle bottom rim reflection -->
+  <ellipse cx="32" cy="53" rx="14" ry="2.5" fill="#ffffff" opacity="0.25"/>
+</svg>
